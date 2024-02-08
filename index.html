@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="setup">
+        <h1>Rock, Paper, Scissors</h1>
+        <div id="player">
+            <p id="playerNameError"></p>
+            <input id="playerName" type="text" placeholder="Enter your name" autocomplete="off">
+            <button id="btnPlayerName">Valider</button>
+
+        </div>
+
+    </div>
+    <div id="container">
+        <p id="aiCount">0</p>
+        <div id="aiImg">
+            <img id="aiChoice" src="medias/rockpaper.gif" alt="roll rock, paper, scissors" draggable="false">
+        </div>
+
+
+
+        <p id="result">PLAY</p>
+
+        <div id="userImg">
+            <img id="rock" src="medias/rock.png" alt="Rock" draggable="false">
+            <img id="paper" src="medias/paper.png" alt=">Paper" draggable="false">
+            <img id="scissors" src="medias/scissor.png" alt="Scissor" draggable="false">
+        </div>
+        <p id="userCount">0</p>
+
+    </div>
+    <div id="bestCount">
+        <div id="txt1">
+            <p id="playerNameDisplay"></p>
+            <p id="bestUserCount">0</p>
+        </div>
+        <div id="txt2">
+            <p>Best score Ai</p>
+            <p id="bestAiCount">0</p>
+        </div>
+    </div>
+    <button id="restartGame">Reset</button>
+
+</body>
+
+</html>
