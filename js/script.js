@@ -41,11 +41,11 @@ function init() {
 
   function wonOrLost() {
     if (userCount.textContent == 3) {
-      result.textContent = "Vous avez gagné";
+      result.textContent = "You Win";
       bestUserCount.textContent++;
       reset();
     } else if (aiCount.textContent == 3) {
-      result.textContent = "Vous avez perdu";
+      result.textContent = "You Loose";
       bestAiCount.textContent++;
       reset();
     }
@@ -83,7 +83,7 @@ function init() {
     if (aiInt == 1) {
       aiChoice.src = "";
       aiChoice.src = "medias/rock.png";
-      result.textContent = "PAR";
+      result.textContent = "DRAW";
       resetImg();
     } else if (aiInt == 2) {
       aiChoice.src = "";
@@ -116,7 +116,7 @@ function init() {
     } else if (aiInt == 2) {
       aiChoice.src = "";
       aiChoice.src = "medias/paper.png";
-      result.textContent = "PAR";
+      result.textContent = "DRAW";
       resetImg();
     } else {
       aiChoice.src = "";
@@ -149,7 +149,7 @@ function init() {
     } else {
       aiChoice.src = "";
       aiChoice.src = "medias/scissor.png";
-      result.textContent = "PAR";
+      result.textContent = "DRAW";
       resetImg();
     }
   });
